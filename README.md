@@ -9,7 +9,7 @@ Intelligent unmanned aerial vehicle (UAV) is crucial in applications such as por
 This figure shows the workflow of our DFVG.
 
 ## UAV-Wafog dataset
-The proposed dataset UAV-Wafog can be downloaded here.
+The proposed UAV-Wafog dataset, consisting of 84 sequences with a total of 17,859 paired foggy and fog-free frames, is available for download here.
 
 ## Demonstration running instructions
 ### 1. Requirements
