@@ -4,7 +4,7 @@
 
 ## Abstract
 Intelligent unmanned aerial vehicle (UAV) is crucial in applications such as port monitoring and water rescue. However, fog significantly reduces the perceptual capability of UAV in common water scenarios. Existing methods primarily address the limitations of visual perception by training on paired foggy and fog-free data. Nevertheless, it is difficult to obtain high-quality real-world paired UAV foggy and fog-free datasets. Furthermore, the flicker caused by independently generating each frame severely leads to performance degradation of defogging methods for UAVs. Additionally, existing metrics for evaluating fog authenticity are insufficient and overlook foggy video generation. To address these issues, this work proposes a novel deflicker-awared foggy video generation framework, which reduces flicker in fog generation by fully leveraging temporal context information. Specifically, an innovative inter-frame depth-map deflicker is designed to refine distance information within sequences. A new long-term light consistency is introduced to achieve time-invariant atmospheric light values. A new benchmark comprising 84 high-quality video sequences with diverse scenes and challenging conditions captured by the UAV is established to address the scarcity of high-quality paired foggy and fog-free sequence data in water scenes. A new evaluation metric is also presented to assess the authenticity of synthetic fog data. Extensive experiments and visual comparisons with real fog demonstrate the feasibility of our method.
-![Workflow of our framework](https://github.com/WangLiYaoTJ/DFVG/images/main.png)
+![Workflow of our framework](images/main.png)
 
 This figure shows the workflow of our DFVG.
 
