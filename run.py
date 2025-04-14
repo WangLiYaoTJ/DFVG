@@ -19,13 +19,13 @@ for v in range(len(video_list)):
     depth_estimation_cmd = "python marigold/run.py --vid_name {}".format(video)
     os.system(depth_estimation_cmd)
 
-    atlas_generation_cmd = "python atlas_and_filter/src/flow_guided_depth_atlas.py --vid_name {}".format(video)
+    atlas_generation_cmd = "python networks/atlas_and_filter/src/flow_guided_depth_atlas.py --vid_name {}".format(video)
     os.system(atlas_generation_cmd)
 
-moveatlas_cmd = "python atlas_and_filter/moveatlas.py"
+moveatlas_cmd = "python networks/atlas_and_filter/moveatlas.py"
 os.system(moveatlas_cmd)
 
-filter_cmd = "python atlas_and_filter/src/neural_filter_net.py --fps {}".format(opts.fps)
+filter_cmd = "python networks/atlas_and_filter/src/neural_filter_net.py --fps {}".format(opts.fps)
 os.system(filter_cmd)
 
 deflicker_cmd = "python test.py"
