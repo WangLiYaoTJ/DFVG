@@ -9,7 +9,7 @@ Intelligent unmanned aerial vehicle (UAV) is crucial in applications such as por
 This figure shows the workflow of our DFVG.
 
 ## UAV-Wafog dataset
-The proposed UAV-Wafog dataset, consisting of 84 sequences with a total of 17,859 paired foggy and fog-free frames, is available for download here.
+The proposed UAV-Wafog dataset, consisting of 84 sequences with a total of 17,859 paired foggy and fog-free frames, is available for download here: Google Drive or [Baidu Netdisk](https://pan.baidu.com/s/1XRXwhJAIYyV0EeN4rhG8JA?pwd=q2me).
 
 ## Demonstration running instructions
 ### 1. Requirements
@@ -39,7 +39,9 @@ The generated foggy videos  will be saved in the `data/output_haze_dynamicA_beta
 
 ### 3. Weights and Checkpoints
 
-The weights and checkpoints can be downloaded here.
+The weights can be downloaded here: [Google Drive](https://drive.google.com/file/d/16jW9iK9KTdNsjfpGHW_GLXh9TYZtt0Km/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1-tqu1nQgmUNjbPjgIHehMw?pwd=5cvi).
+The checkpoints can be downloaded here: [Google Drive](https://drive.google.com/file/d/1hbp0wepRZixrZro6yb0GMgLghPsi1WQp/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1Y4NGYrJYn7Co4SoQqr4qyA?pwd=rhfd).
+Notification: We use marigold-v1-0 as marigold weights, you can download it from the [official website](https://github.com/prs-eth/Marigold) or directly download the one we uploaded: Google Drive or [Baidu Netdisk](https://pan.baidu.com/s/1cdFA9hwU5JXSFE_sFiLFiA?pwd=pub4).
 
 ### 4. Contact
 If you have any questions, please contact me.
