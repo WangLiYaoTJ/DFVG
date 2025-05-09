@@ -243,9 +243,9 @@ class Mix(nn.Module):
         mix_factor = self.mix_block(self.w)
         out = fea1 * mix_factor.expand_as(fea1) + fea2 * (1 - mix_factor.expand_as(fea2))
         return out
-class FCA(nn.Module):
+class DTCA(nn.Module):
     def __init__(self,channel,b=1, gamma=2):
-        super(FCA, self).__init__()
+        super(DTCA, self).__init__()
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
         t = int(abs((math.log(channel, 2) + b) / gamma))
         k = t if t % 2 else t + 1
@@ -289,14 +289,14 @@ class ResidualBlock1(nn.Module):
     def __init__(self, channels,norm=None, bias=True):
         super(ResidualBlock1, self).__init__()
         self.conv = ConvLayer(channels, channels, kernel_size=3, stride=1, bias=bias, norm=norm)
-        self.fca = FCA(channels)
+        self.dtca = DTCA(channels)
 
         self.relu = nn.LeakyReLU(negative_slope=0.2, inplace=True)
 
     def forward(self, x):
         input = x
         out = self.relu(self.conv(x))
-        out = self.fca(out)
+        out = self.dtca(out)
         out = self.conv(out)
         out = out + input
 
